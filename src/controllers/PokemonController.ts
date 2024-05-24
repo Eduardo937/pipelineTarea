@@ -18,10 +18,8 @@ class PokemonController extends AbstractController{
         //CRUD
         this.router.get("/consultar",this.getConsultar.bind(this));
         this.router.post("/crear",this.postCrear.bind(this));
-        this.router.post("/crearDepto", this.postCrearEntrenador.bind(this));
-        this.router.get("/consultaDepto",this.getConsultarEntrenador.bind(this));
-        //this.router.post("/cambiar",);
-        //this.router.post("/eliminar",);       
+        this.router.post("/crearEntrenador", this.postCrearEntrenador.bind(this));
+        this.router.get("/consultaEnternador",this.getConsultarEntrenador.bind(this)); 
     }
 
     private async getConsultarEntrenador(req:Request,res:Response){
